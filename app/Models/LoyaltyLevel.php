@@ -10,7 +10,8 @@ class LoyaltyLevel extends Model
     public $incrementing = true;          // SERIAL auto-incrementa
     protected $keyType = 'int';
 
-    protected $fillable = ['name', 'cashback', 'min_spend'. 'pririty'];
+    protected $fillable = ['name', 'cashback_percent', 'min_spend', 'priority'];
+
 
     // Um nivel pode ter vários clientes
     public function customer()

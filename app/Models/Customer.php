@@ -38,4 +38,5 @@ class Customer extends Model
     {
         return $this->hasMany(LevelHistory::class, 'customer_id', 'customer_id');
     }
+
 }
